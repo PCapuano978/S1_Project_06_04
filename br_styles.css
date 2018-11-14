@@ -37,7 +37,7 @@ html {
 body {
     filter: drop-shadow(10px 10px 50px rgb(51, 51, 51));
     box-shadow: inset 5px 5px 10px black;
-    background-color: rgb(255, 222, 179);
+    background: radial-gradient(circle at 100%, rgb(255, 222, 174) 50%, rgb(204, 130, 130) 100%);
     margin: 0px auto;
     width: 90%;
     max-width: 1100px;
@@ -48,12 +48,11 @@ body {
 /* Body Header Navigation Styles */
 
 body>header {
-    box-shadow: inset 5px 5px 10px black;
     background-color: antiquewhite;
     height: 175px;
     margin-bottom: 30px;
     position: relative;
-    border: .25em solid rgb(0, 167, 167)
+    border: .3em solid rgb(0, 167, 167);
 }
 
 body>header>nav.toplinks {
@@ -137,6 +136,7 @@ body>header nav.tabs {
 
 body>header nav.tabs li {
     transform: perspective(50px) rotateX(20deg);
+    font-size: 1.5em;
 }
 
 body>header nav.tabs li:hover {
@@ -177,6 +177,7 @@ section#right_down {
 
 section#left h1 {
     border-radius: 25px;
+    text-shadow: 1px 1px saddlebrown;
 }
 
 section#left nav.vertical {
@@ -190,7 +191,8 @@ section#left nav.vertical {
 section#left nav.vertical h1 {
     color: white;
     background-color: rgb(170, 131, 22);
-    font-size: 1.1em;
+    text-shadow: 1px 1px rgb(0, 0, 0);
+    font-size: 1.5em;
     height: 30px;
     line-height: 30px;
     text-align: center;
@@ -199,7 +201,7 @@ section#left nav.vertical h1 {
 
 section#left nav.vertical ul li {
 
-    font-size: 12px;
+    font-size: 1.5em;
     line-height: 2;
     margin: 5px 0px 5px 20px;
 }
@@ -210,7 +212,7 @@ section#left nav.vertical ul li:last-of-type {
 
 section#left nav.vertical a {
     color: brown;
-    text-shadow: 2px 2px 15px rgb(0, 0, 0);
+    text-shadow: 1px 1px 0px saddlebrown;
 }
 
 section#left nav.vertical a:hover {
@@ -227,6 +229,7 @@ section#center li {
 
 section#right_up h1 {
     border-radius: 25px;
+    text-shadow: 1px 1px rgb(0, 0, 0);
 }
 
 section#right_up nav.vertical {
@@ -240,17 +243,18 @@ section#right_up nav.vertical {
 section#right_up nav.vertical h1 {
     color: white;
     background-color: rgb(170, 131, 22);
-    font-size: 1.1em;
+    font-size: 1.5em;
     height: 30px;
     line-height: 30px;
     text-align: center;
+    text-shadow: 1px 1px rgb(0, 0, 0);
     width: 100%;
 }
 
 section#right_up nav.vertical ul li {
     color: brown;
-    text-shadow: 2px 2px 15px rgb(0, 0, 0);
-    font-size: 12px;
+    text-shadow: 2px 2px 10px saddlebrown;
+    font-size: 1.5em;
     line-height: 2;
     margin: 5px 0px 5px 20px;
 }
@@ -270,13 +274,14 @@ section#right_down nav.vertical {
     margin: 0px auto 20px;
     width: 80%;
     color: brown;
-    text-shadow: 2px 2px 15px rgb(0, 0, 0);
+    text-shadow: 2px 2px 10px saddlebrown;
 }
 
 section#right_down nav.vertical h1 {
     color: white;
     background-color: rgb(170, 131, 22);
-    font-size: 1.1em;
+    font-size: 1.2em;
+    text-shadow: 1px 1px rgb(0, 0, 0);
     height: 30px;
     line-height: 30px;
     text-align: center;
@@ -284,7 +289,7 @@ section#right_down nav.vertical h1 {
 }
 
 section#right_down nav.vertical ul li {
-    font-size: 12px;
+    font-size: 1.5em;
     line-height: 2;
     margin: 5px 0px 5px 20px;
 }
@@ -342,16 +347,46 @@ section#center h2 {
     clear: left;
     font-weight: normal;
     margin: 9px 0px 40px 15px;
-    text-shadow: 2px 2px 15px rgb(0, 0, 0);
+    text-shadow: 2px 2px 10px saddlebrown;
 }
 
 section#center li {
     font-size: 1.5em;
-    color: saddlebrown;
-    text-shadow: 2px 2px 20px rgb(0, 0, 0);     
+    color: brown;
+    text-shadow: 1px 1px rgb(0, 0, 0);
     margin-left: 15px;
     margin: 10px;
     line-height: 1.3em;
+    clear: both;
+}
+
+/* Grid Styles */
+
+.grid {
+    display: grid;
+    clear: both;
+    margin: auto;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: groove .5em;
+    border: .3em solid rgb(0, 167, 167);
+}
+
+.photo img {
+    width: 100%;
+    display: block;
+    border: groove .5em saddlebrown;
+    box-sizing: border-box;
+}
+
+.photo {
+    padding: 1em 1em 2em 1em;
+    color: brown;
+    text-align: center;
+    font-size: 1.4em;
+    background-image: radial-gradient(circle at 50%, rgb(255, 222, 174) 33%, rgb(204, 130, 130) 66%, rgb(255, 222, 174) 100%);
+    vertical-align: middle;
+    text-shadow: 1px 1px rgb(0, 0, 0);
 }
 
 /* Footer Styles */
