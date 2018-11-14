@@ -36,6 +36,7 @@ html {
 
 body {
     filter: drop-shadow(10px 10px 50px rgb(51, 51, 51));
+    box-shadow: inset 5px 5px 10px black;
     background-color: rgb(255, 222, 179);
     margin: 0px auto;
     width: 90%;
@@ -47,6 +48,7 @@ body {
 /* Body Header Navigation Styles */
 
 body>header {
+    box-shadow: inset 5px 5px 10px black;
     background-color: antiquewhite;
     height: 175px;
     margin-bottom: 30px;
@@ -108,6 +110,7 @@ body>header nav.tabs li {
     line-height: 40px;
     margin-left: 0%;
     margin-right: 2%;
+    margin-bottom: 0.15%;
     width: 15%;
 }
 
@@ -156,7 +159,14 @@ section#center {
     width: 50%;
 }
 
-section#right {
+section#right_up {
+    margin-top: 25px;
+    float: left;
+    padding-bottom: 20px;
+    width: 30%;
+}
+
+section#right_down {
     margin-top: 25px;
     float: left;
     padding-bottom: 20px;
@@ -170,9 +180,9 @@ section#left h1 {
 }
 
 section#left nav.vertical {
-    border: 1px solid rgb(20, 167, 170);
+    border: 7px solid saddlebrown;
     border-radius: 25px;
-    background-color: white;
+    background-color: azure;
     margin: 0px auto 20px;
     width: 80%;
 }
@@ -188,6 +198,7 @@ section#left nav.vertical h1 {
 }
 
 section#left nav.vertical ul li {
+
     font-size: 12px;
     line-height: 2;
     margin: 5px 0px 5px 20px;
@@ -198,7 +209,8 @@ section#left nav.vertical ul li:last-of-type {
 }
 
 section#left nav.vertical a {
-    color: rgb(151, 151, 151);
+    color: brown;
+    text-shadow: 2px 2px 15px rgb(0, 0, 0);
 }
 
 section#left nav.vertical a:hover {
@@ -207,48 +219,78 @@ section#left nav.vertical a:hover {
 
 /* Center section */
 
-section#center article {
-    background-color: rgb(191, 191, 191);
-    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    margin: 0px auto;
-    padding: 20px;
-    width: 95%;
+section#center li {
+    font-size: 20em;
 }
 
-section#center article header h1 {
-    font-size: 2.5em;
-    font-weight: normal;
-    margin: 10px;
+/* Right Section */
+
+section#right_up h1 {
+    border-radius: 25px;
 }
 
-section#center article header h2 {
-    font-size: 1.8em;
-    font-weight: normal;
-    margin-top: 15px;
+section#right_up nav.vertical {
+    border: 7px solid saddlebrown;
+    border-radius: 25px;
+    background-color: white;
+    margin: 0px auto 20px;
+    width: 80%;
 }
 
-section#center img#dishimg {
-    width: 55%;
-    float: left;
-    margin: 15px;
+section#right_up nav.vertical h1 {
+    color: white;
+    background-color: rgb(170, 131, 22);
+    font-size: 1.1em;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    width: 100%;
 }
 
-section#center article p:first-of-type {
-    color: rgb(20, 127, 130);
-    font-size: 1.5em;
-    line-height: 1.2em;
-    margin: 10px 5px;
+section#right_up nav.vertical ul li {
+    color: brown;
+    text-shadow: 2px 2px 15px rgb(0, 0, 0);
+    font-size: 12px;
+    line-height: 2;
+    margin: 5px 0px 5px 20px;
 }
 
-article p:last-of-type {
-    clear: left;
-    font-size: 1.2em;
-    color: rgb(0, 167, 167);
-    margin: 0px 0px 20px 15px;
+section#right_up nav.vertical ul li:last-of-type {
+    margin-bottom: 20px;
 }
 
-article p:last-of-type a {
-    color: rgb(0, 167, 167);
+section#right_down h1 {
+    border-radius: 25px;
+}
+
+section#right_down nav.vertical {
+    border: 7px solid saddlebrown;
+    border-radius: 25px;
+    background-color: white;
+    margin: 0px auto 20px;
+    width: 80%;
+    color: brown;
+    text-shadow: 2px 2px 15px rgb(0, 0, 0);
+}
+
+section#right_down nav.vertical h1 {
+    color: white;
+    background-color: rgb(170, 131, 22);
+    font-size: 1.1em;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+section#right_down nav.vertical ul li {
+    font-size: 12px;
+    line-height: 2;
+    margin: 5px 0px 5px 20px;
+}
+
+section#right_down nav.vertical ul li:last-of-type {
+    margin-bottom: 20px;
 }
 
 /* Aside Styles */
@@ -295,16 +337,18 @@ section#center aside li a {
 }
 
 section#center h2 {
-    font-size: 1.8em;
+    font-size: 2em;
     color: rgb(101, 101, 101);
     clear: left;
     font-weight: normal;
-    margin: 40px 0px 10px 15px;
+    margin: 9px 0px 40px 15px;
+    text-shadow: 2px 2px 15px rgb(0, 0, 0);
 }
 
 section#center li {
-    font-size: 1.1em;
-    color: rgb(101, 101, 101);
+    font-size: 1.5em;
+    color: saddlebrown;
+    text-shadow: 2px 2px 20px rgb(0, 0, 0);     
     margin-left: 15px;
     margin: 10px;
     line-height: 1.3em;
@@ -319,4 +363,5 @@ footer {
     text-align: center;
     padding: 10px;
     color: rgb(255, 164, 164);
+    box-shadow: inset 5px 5px 10px black;
 }
